@@ -341,13 +341,17 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 7rem;
-  font-weight: 700;
-  color: var(--gold);
   margin: 0 auto 3rem;
   position: relative;
   flex-shrink: 0;
+  overflow: hidden;
+}
+.about-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
 }
 .about-avatar::before {
   content: '';
@@ -355,6 +359,8 @@ nav.scrolled {
   inset: -8px;
   border-radius: 50%;
   border: 1px solid rgba(201,168,76,0.2);
+  z-index: 2;
+  pointer-events: none;
 }
 .about-avatar::after {
   content: '';
@@ -362,6 +368,8 @@ nav.scrolled {
   inset: -16px;
   border-radius: 50%;
   border: 1px solid rgba(201,168,76,0.08);
+  z-index: 2;
+  pointer-events: none;
 }
 .about-left {
   display: flex;
@@ -946,7 +954,7 @@ footer {
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="mailto:your@email.com" class="nav-cta">Let's Talk</a>
+  <a href="mailto:rtrfarhan3201@gmail.com" class="nav-cta">Let's Talk</a>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -967,13 +975,13 @@ footer {
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <div class="hero-tag">DevOps · MBA · Athlete · Entrepreuner</div>
+    <div class="hero-tag">DevOps · MBA · Athlete · Entrepreneur</div>
     <h1 class="hero-name">Far<em>han</em></h1>
     <p class="hero-headline">DevOps Engineer &nbsp;·&nbsp; MBA Marketing &nbsp;·&nbsp; Bridging Technology & Business<br/>Seeking Roles in Product Management, Business Development & Strategy</p>
-    <p class="hero-bio">I've led a hundred community projects, run sixty marathons, three triathlons and built systems at one of the world's largest engineering companies. Now I'm moving where I've always belonged — at the intersection of technology and business strategy.</p>
+    <p class="hero-bio">I've led over a hundred community projects, completed marathons and triathlons, and built systems at one of the world's largest engineering companies. Now I'm moving where I've always belonged — at the intersection of technology and business strategy.</p>
     <div class="hero-ctas">
       <a href="#experience" class="btn-primary">View My Work</a>
-      <a href="mailto:your@email.com" class="btn-outline">Let's Connect</a>
+      <a href="mailto:rtrfarhan3201@gmail.com" class="btn-outline">Let's Connect</a>
     </div>
   </div>
   <div class="hero-scroll-hint">
@@ -990,11 +998,17 @@ footer {
   </div>
   <div class="about-grid">
     <div class="about-left reveal reveal-delay-1">
-      <div class="about-avatar">F</div>
+      <div class="about-avatar">
+        <img
+          src="https://raw.githubusercontent.com/farhan2225/farhan2225.github.io/main/GRR%20-%20G3.jpg"
+          alt="Mohamed Farhan"
+          onerror="this.style.display='none'; this.parentElement.style.fontSize='7rem'; this.parentElement.style.fontFamily='Cormorant Garamond, serif'; this.parentElement.style.color='var(--gold)'; this.parentElement.insertAdjacentText('beforeend','F');"
+        />
+      </div>
       <div class="about-stats">
         <div class="stat-item">
           <span class="stat-num">60+</span>
-          <div class="stat-label">Marathons</div>
+          <div class="stat-label">Races Completed</div>
         </div>
         <div class="stat-item">
           <span class="stat-num">115+</span>
@@ -1019,9 +1033,9 @@ footer {
       </div>
     </div>
     <div class="about-text reveal reveal-delay-2">
-      <p>I started as a Software engineer, got hired by Bosch, and quickly realized the problems that fascinated me most weren't infrastructure problems — they were business problems. What should we build? For whom? Why does this exist? That's the territory I want to own.</p>
+      <p>I started as a software engineer, got hired by Bosch, and quickly realized the problems that fascinated me most weren't infrastructure problems — they were business problems. What should we build? For whom? Why does this exist? That's the territory I want to own.</p>
       <p>While working full-time in DevOps, I went back to school for an MBA in Marketing at Manipal Academy of Higher Education. Not because I needed a credential — but because I needed a vocabulary for the ideas I'd been wrestling with for years. Strategy. Consumer behavior. Product thinking. Financial discipline. It clicked everything into place.</p>
-      <p>Outside the office, I run things. Literally and figuratively. I've completed over 60 marathons, served as President of my Rotaract club — where I executed 115+ community projects in a single year — and help run the family's hospitality business in Coimbatore. The common thread: I show up, I lead, and I finish what I start.</p>
+      <p>Outside the office, I run things. Literally and figuratively. I've completed races and triathlons, served as President of my Rotaract club — where I executed 115+ community projects in a single year — and help run the family's hospitality business in Coimbatore. The common thread: I show up, I lead, and I finish what I start.</p>
       <div class="about-quote">
         <p>"I'm not transitioning away from tech — I'm adding the other half of the equation."</p>
       </div>
@@ -1158,7 +1172,6 @@ footer {
           <span class="pill">Networking</span>
           <span class="pill">Negotiation</span>
           <span class="pill">Team Management</span>
-  
         </div>
       </div>
     </div>
@@ -1172,9 +1185,9 @@ footer {
     <h2 class="section-title">I've always run<br/><em>things.</em></h2>
   </div>
   <div class="timeline reveal">
-     <div class="timeline-item">
+    <div class="timeline-item">
       <div class="timeline-year">Ongoing</div>
-      <div class="timeline-title">District Chair - District Events</div>
+      <div class="timeline-title">District Chair — District Events</div>
       <div class="timeline-org">RI District 3206 · Rotary International</div>
       <div class="timeline-impact">Chair for organizing large-scale Rotaract district events, responsible for logistics, communications, and on-ground execution. Built the muscle for high-stakes coordination under pressure.</div>
     </div>
@@ -1187,7 +1200,7 @@ footer {
     <div class="timeline-item">
       <div class="timeline-year">2022 – 2023</div>
       <div class="timeline-title">Club President</div>
-      <div class="timeline-org">Rotaract Club · Coimbatore</div>
+      <div class="timeline-org">Rotaract Club of Coimbatore CACIL</div>
       <div class="timeline-impact">Led the club through its most productive year on record — 115+ community projects across service, professional development, and international verticals. Built and managed a cross-functional team from the ground up. Not everyone who holds this title earns recognition for it. I did.</div>
       <div class="timeline-award"><i class="fas fa-award"></i> Best President Award</div>
     </div>
@@ -1205,8 +1218,8 @@ footer {
       <div class="ach-card">
         <i class="fas fa-person-running ach-icon"></i>
         <div class="ach-number">60+</div>
-        <div class="ach-title">Marathons Completed</div>
-        <div class="ach-desc">Not a hobby. A discipline. Every finish line is another data point that I don't quit when things get hard.</div>
+        <div class="ach-title">Races Completed</div>
+        <div class="ach-desc">Road races, marathons, triathlons. A discipline built over years — every finish line proves I don't quit when things get hard.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-users ach-icon"></i>
@@ -1218,7 +1231,7 @@ footer {
         <i class="fas fa-hotel ach-icon"></i>
         <div class="ach-number">★★★</div>
         <div class="ach-title">Hospitality Business</div>
-        <div class="ach-desc">Hotel Chanma International, Coimbatore. Rooftop pool, Ganis Gym & CrossFit. Family business I actively help operate.</div>
+        <div class="ach-desc">Hotel Chanma International, Coimbatore. Rooftop pool, Ganis Gym & CrossFit. Family business I actively help operate and market.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-trophy ach-icon"></i>
@@ -1227,28 +1240,28 @@ footer {
         <div class="ach-desc">Recognized for the most impactful club presidency in the district. Earned, not inherited.</div>
       </div>
       <div class="ach-card">
-        <i class="fas fa-trophy ach-icon"></i>
+        <i class="fas fa-star ach-icon"></i>
         <div class="ach-number">DRR</div>
         <div class="ach-title">Special Recognition 2021 & 2023</div>
-        <div class="ach-desc">Recognized by the District Rotaract Representatives the highest level portfolio for my club presidency in the district. Earned, not inherited.</div>
+        <div class="ach-desc">Recognized by the District Rotaract Representative for outstanding contribution across two cycles.</div>
       </div>
       <div class="ach-card">
-        <i class="fas fa-trophy ach-icon"></i>
-        <div class="ach-number">President</div>
-        <div class="ach-title">Outstanding Community Based Club</div>
-        <div class="ach-desc">Recognized for the most impactful club projects in the district. Earned, not inherited.</div>
+        <i class="fas fa-medal ach-icon"></i>
+        <div class="ach-number">1st</div>
+        <div class="ach-title">Outstanding Community-Based Club</div>
+        <div class="ach-desc">District recognition for the most impactful community projects delivered by a club that year.</div>
       </div>
       <div class="ach-card">
-        <i class="fas fa-trophy ach-icon"></i>
-        <div class="ach-number">Paper Published</div>
+        <i class="fas fa-file-alt ach-icon"></i>
+        <div class="ach-number">Published</div>
         <div class="ach-title">Smart Cane for Visually Impaired</div>
-        <div class="ach-desc">Published Paper for Smart Cane for Visually Impaired made possible using AI</div>
+        <div class="ach-desc">Research paper on an AI-powered assistive device for the visually impaired — applying tech to real human problems.</div>
       </div>
       <div class="ach-card">
-        <i class="fas fa-trophy ach-icon"></i>
-        <div class="ach-number">Internships</div>
-        <div class="ach-title">Attended Various Internship Programmes</div>
-        <div class="ach-desc">Interned on various topics like AI, Front End Development and DevOps</div>
+        <i class="fas fa-award ach-icon"></i>
+        <div class="ach-number">Champ</div>
+        <div class="ach-title">Bosch Champ-Skill Recognition</div>
+        <div class="ach-desc">Recognized at Bosch BGSW for coordination and organizing skills during the PA-TO Townhall. Technical companies notice people skills too.</div>
       </div>
     </div>
   </div>
@@ -1260,8 +1273,8 @@ footer {
   <h2 class="contact-title reveal">Let's build<br/><em>something.</em></h2>
   <p class="contact-sub reveal">If you're working on something at the intersection of tech and business — and you need someone who actually understands both — let's talk.</p>
   <div class="contact-ctas reveal">
-    <a href="mailto:your@email.com" class="btn-primary"><i class="fas fa-envelope" style="margin-right:0.6rem"></i>Send an Email</a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn-outline"><i class="fab fa-linkedin" style="margin-right:0.6rem"></i>LinkedIn</a>
+    <a href="mailto:rtrfarhan3201@gmail.com" class="btn-primary"><i class="fas fa-envelope" style="margin-right:0.6rem"></i>Send an Email</a>
+    <a href="https://www.linkedin.com/in/mohamed-farhan-982351224/" target="_blank" class="btn-outline"><i class="fab fa-linkedin" style="margin-right:0.6rem"></i>LinkedIn</a>
   </div>
   <div class="contact-divider reveal"></div>
   <div class="social-row reveal">
@@ -1280,7 +1293,7 @@ footer {
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-name">Farhan</div>
+    <div class="footer-name">Mohamed Farhan</div>
     <div class="footer-tagline">DevOps Engineer · MBA Marketing · Coimbatore</div>
   </div>
   <div class="footer-copy">Bridging Technology & Business · Open to PM, BD & Strategy roles</div>
