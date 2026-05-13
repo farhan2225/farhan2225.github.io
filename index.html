@@ -3,7 +3,29 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Farhan — DevOps Engineer & MBA | Product · Strategy · BD</title>
+<title>Mohamed Farhan — DevOps Engineer & MBA | Product · Strategy · BD</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="Mohamed Farhan — DevOps Engineer at Bosch, MBA Marketing at Manipal. Bridging technology and business. Seeking roles in Product Management, Business Development & Strategy."/>
+<meta name="keywords" content="Mohamed Farhan, DevOps Engineer, MBA Marketing, Product Management, Business Development, Bosch, Coimbatore, Rotaract"/>
+<meta name="author" content="Mohamed Farhan"/>
+
+<!-- Open Graph / LinkedIn Preview -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://farhan2225.github.io/"/>
+<meta property="og:title" content="Mohamed Farhan — DevOps · MBA · Product & Strategy"/>
+<meta property="og:description" content="DevOps Engineer at Bosch building toward Product Management and Business Development. MBA Marketing, Rotaract President, Hybrid Athlete."/>
+<meta property="og:image" content="https://raw.githubusercontent.com/farhan2225/farhan2225.github.io/main/GRR%20-%20G3.jpg"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Mohamed Farhan — DevOps · MBA · Product & Strategy"/>
+<meta name="twitter:description" content="DevOps Engineer at Bosch building toward Product Management and Business Development."/>
+<meta name="twitter:image" content="https://raw.githubusercontent.com/farhan2225/farhan2225.github.io/main/GRR%20-%20G3.jpg"/>
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><text y='72' x='12' font-size='72' font-family='serif' fill='%23c9a84c'>F</text></svg>"/>
+
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
@@ -21,904 +43,183 @@
 --border: rgba(201,168,76,0.12);
 --card: rgba(255,255,255,0.03);
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
-body {
-  background: var(--bg);
-  color: var(--white);
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-  overflow-x: hidden;
-}
-
+body { background: var(--bg); color: var(--white); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
 
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
-/* ── NAV ── */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 900;
-  padding: 1.4rem 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background 0.4s, backdrop-filter 0.4s, border-bottom 0.4s;
-}
-nav.scrolled {
-  background: rgba(8,11,18,0.85);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--border);
-}
-.nav-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--gold);
-  letter-spacing: 0.04em;
-  text-decoration: none;
-}
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; padding: 1.4rem 5vw; display: flex; align-items: center; justify-content: space-between; transition: background 0.4s, backdrop-filter 0.4s, border-bottom 0.4s; }
+nav.scrolled { background: rgba(8,11,18,0.85); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--gold); letter-spacing: 0.04em; text-decoration: none; }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-.nav-links a {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.3s;
-}
+.nav-links a { font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.3s; }
 .nav-links a:hover { color: var(--gold); }
-.nav-cta {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.55rem 1.4rem;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  text-decoration: none;
-  transition: background 0.3s, color 0.3s;
-}
+.nav-cta { font-family: 'Syne', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.55rem 1.4rem; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; transition: background 0.3s, color 0.3s; }
 .nav-cta:hover { background: var(--gold); color: var(--bg); }
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 4px;
-}
-.hamburger span {
-  display: block;
-  width: 24px; height: 2px;
-  background: var(--white);
-  transition: transform 0.3s, opacity 0.3s;
-}
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: transform 0.3s, opacity 0.3s; }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-.mobile-menu {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(8,11,18,0.97);
-  z-index: 800;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-}
+.mobile-menu { display: none; position: fixed; inset: 0; background: rgba(8,11,18,0.97); z-index: 800; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
 .mobile-menu.open { display: flex; }
-.mobile-menu a {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
-  font-weight: 400;
-  color: var(--white);
-  text-decoration: none;
-  transition: color 0.3s;
-}
+.mobile-menu a { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 400; color: var(--white); text-decoration: none; transition: color 0.3s; }
 .mobile-menu a:hover { color: var(--gold); }
 
-/* ── HERO ── */
-#hero {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 10rem 5vw 6rem;
-  position: relative;
-  overflow: hidden;
-}
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(201,168,76,0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 40% at 20% 70%, rgba(59,130,246,0.04) 0%, transparent 50%);
-}
-.hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
-  background-size: 80px 80px;
-  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%);
-}
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  width: 100%;
-}
-.hero-tag {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  opacity: 0;
-  animation: fadeUp 0.8s 0.2s forwards;
-}
-.hero-tag::before {
-  content: '';
-  display: inline-block;
-  width: 2.5rem; height: 1px;
-  background: var(--gold);
-}
-.hero-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(4.5rem, 11vw, 9.5rem);
-  font-weight: 700;
-  line-height: 0.92;
-  letter-spacing: -0.02em;
-  color: var(--white);
-  opacity: 0;
-  animation: fadeUp 0.9s 0.35s forwards;
-  margin-bottom: 1.8rem;
-}
+/* HERO */
+#hero { min-height: 100vh; display: grid; place-items: center; padding: 10rem 5vw 6rem; position: relative; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(201,168,76,0.06) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 20% 70%, rgba(59,130,246,0.04) 0%, transparent 50%); }
+.hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 80px 80px; mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%); }
+.hero-inner { position: relative; z-index: 2; max-width: 900px; width: 100%; }
+.hero-tag { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.8rem; opacity: 0; animation: fadeUp 0.8s 0.2s forwards; }
+.hero-tag::before { content: ''; display: inline-block; width: 2.5rem; height: 1px; background: var(--gold); }
+.hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(4.5rem, 11vw, 9.5rem); font-weight: 700; line-height: 0.92; letter-spacing: -0.02em; color: var(--white); opacity: 0; animation: fadeUp 0.9s 0.35s forwards; margin-bottom: 1.8rem; }
 .hero-name em { font-style: italic; color: var(--gold); }
-.hero-headline {
-  font-family: 'Syne', sans-serif;
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 2.2rem;
-  opacity: 0;
-  animation: fadeUp 0.9s 0.5s forwards;
-  max-width: 700px;
-  line-height: 1.9;
-}
-.hero-bio {
-  font-size: 1.08rem;
-  font-weight: 300;
-  color: rgba(240,237,232,0.7);
-  max-width: 560px;
-  line-height: 1.8;
-  margin-bottom: 3rem;
-  opacity: 0;
-  animation: fadeUp 0.9s 0.65s forwards;
-}
-.hero-ctas {
-  display: flex;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-  opacity: 0;
-  animation: fadeUp 0.9s 0.8s forwards;
-}
-.btn-primary {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 1rem 2.4rem;
-  background: var(--gold);
-  color: var(--bg);
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: inline-block;
-}
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(201,168,76,0.3);
-}
-.btn-outline {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 1rem 2.4rem;
-  border: 1px solid rgba(240,237,232,0.2);
-  color: var(--white);
-  text-decoration: none;
-  transition: border-color 0.3s, color 0.3s, transform 0.3s;
-  display: inline-block;
-}
-.btn-outline:hover {
-  border-color: var(--gold);
-  color: var(--gold);
-  transform: translateY(-2px);
-}
-.hero-scroll-hint {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  opacity: 0;
-  animation: fadeUp 0.9s 1.2s forwards;
-}
-.hero-scroll-hint span {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.scroll-line {
-  width: 1px;
-  height: 3rem;
-  background: linear-gradient(to bottom, var(--gold), transparent);
-  animation: scrollPulse 2s ease-in-out infinite;
-}
+.hero-headline { font-family: 'Syne', sans-serif; font-size: clamp(0.8rem, 1.5vw, 1rem); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 2.2rem; opacity: 0; animation: fadeUp 0.9s 0.5s forwards; max-width: 700px; line-height: 1.9; }
+.hero-bio { font-size: 1.08rem; font-weight: 300; color: rgba(240,237,232,0.7); max-width: 560px; line-height: 1.8; margin-bottom: 3rem; opacity: 0; animation: fadeUp 0.9s 0.65s forwards; }
+.hero-ctas { display: flex; gap: 1.2rem; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.9s 0.8s forwards; }
+.btn-primary { font-family: 'Syne', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 1rem 2.4rem; background: var(--gold); color: var(--bg); text-decoration: none; transition: transform 0.3s, box-shadow 0.3s; display: inline-block; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.3); }
+.btn-outline { font-family: 'Syne', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 1rem 2.4rem; border: 1px solid rgba(240,237,232,0.2); color: var(--white); text-decoration: none; transition: border-color 0.3s, color 0.3s, transform 0.3s; display: inline-block; }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+.hero-scroll-hint { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; opacity: 0; animation: fadeUp 0.9s 1.2s forwards; }
+.hero-scroll-hint span { font-family: 'Syne', sans-serif; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+.scroll-line { width: 1px; height: 3rem; background: linear-gradient(to bottom, var(--gold), transparent); animation: scrollPulse 2s ease-in-out infinite; }
 
-/* ── ABOUT ── */
-#about {
-  padding: 8rem 5vw;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.section-label {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-.section-label::before {
-  content: '';
-  display: inline-block;
-  width: 2rem; height: 1px;
-  background: var(--gold);
-}
-.section-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  font-weight: 700;
-  line-height: 1.05;
-  margin-bottom: 3.5rem;
-  letter-spacing: -0.02em;
-}
+/* ABOUT */
+#about { padding: 8rem 5vw; max-width: 1200px; margin: 0 auto; }
+.section-label { font-family: 'Syne', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.8rem; }
+.section-label::before { content: ''; display: inline-block; width: 2rem; height: 1px; background: var(--gold); }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 700; line-height: 1.05; margin-bottom: 3.5rem; letter-spacing: -0.02em; }
 .section-title em { font-style: italic; color: var(--gold); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.about-avatar { width: 280px; height: 280px; border-radius: 50%; background: linear-gradient(135deg, var(--gold-dim), rgba(59,130,246,0.1)); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; margin: 0 auto 3rem; position: relative; flex-shrink: 0; overflow: hidden; }
+.about-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; }
+.about-avatar .avatar-fallback { font-family: 'Cormorant Garamond', serif; font-size: 7rem; font-weight: 700; color: var(--gold); display: none; }
+.about-avatar::before { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 1px solid rgba(201,168,76,0.2); z-index: 2; pointer-events: none; }
+.about-avatar::after { content: ''; position: absolute; inset: -16px; border-radius: 50%; border: 1px solid rgba(201,168,76,0.08); z-index: 2; pointer-events: none; }
+.about-left { display: flex; flex-direction: column; align-items: center; }
+.about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; width: 100%; background: var(--border); border: 1px solid var(--border); }
+.stat-item { background: var(--bg2); padding: 1.4rem 1.2rem; text-align: center; }
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 700; color: var(--gold); line-height: 1; display: block; }
+.stat-label { font-family: 'Syne', sans-serif; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 0.3rem; }
+.about-text p { color: rgba(240,237,232,0.72); margin-bottom: 1.5rem; font-size: 1.02rem; line-height: 1.85; }
+.about-quote { margin-top: 2.5rem; padding: 1.8rem 2rem; border-left: 2px solid var(--gold); background: var(--gold-dim); }
+.about-quote p { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 400; font-style: italic; color: var(--white); line-height: 1.6; margin: 0; }
+.about-quote cite { display: block; font-family: 'Syne', sans-serif; font-size: 0.65rem; font-style: normal; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-top: 0.8rem; }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: start;
-}
-.about-avatar {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold-dim), rgba(59,130,246,0.1));
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 3rem;
-  position: relative;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-.about-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
-}
-.about-avatar::before {
-  content: '';
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  border: 1px solid rgba(201,168,76,0.2);
-  z-index: 2;
-  pointer-events: none;
-}
-.about-avatar::after {
-  content: '';
-  position: absolute;
-  inset: -16px;
-  border-radius: 50%;
-  border: 1px solid rgba(201,168,76,0.08);
-  z-index: 2;
-  pointer-events: none;
-}
-.about-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  width: 100%;
-  background: var(--border);
-  border: 1px solid var(--border);
-}
-.stat-item {
-  background: var(--bg2);
-  padding: 1.4rem 1.2rem;
-  text-align: center;
-}
-.stat-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1;
-  display: block;
-}
-.stat-label {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-top: 0.3rem;
-}
-.about-text p {
-  color: rgba(240,237,232,0.72);
-  margin-bottom: 1.5rem;
-  font-size: 1.02rem;
-  line-height: 1.85;
-}
-.about-quote {
-  margin-top: 2.5rem;
-  padding: 1.8rem 2rem;
-  border-left: 2px solid var(--gold);
-  background: var(--gold-dim);
-}
-.about-quote p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.35rem;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--white);
-  line-height: 1.6;
-  margin: 0;
-}
+/* TESTIMONIALS */
+.testimonials { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); border: 1px solid var(--border); margin-top: 5rem; }
+.testimonial-card { background: var(--bg2); padding: 2.2rem 2rem; }
+.testimonial-text { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: rgba(240,237,232,0.85); line-height: 1.7; margin-bottom: 1rem; }
+.testimonial-author { font-family: 'Syne', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
 
-/* ── EDUCATION ── */
-#education {
-  padding: 8rem 5vw;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
+/* EDUCATION */
+#education { padding: 8rem 5vw; background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .edu-inner { max-width: 1200px; margin: 0 auto; }
-.edu-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  margin-top: 3.5rem;
-}
-.edu-card {
-  background: var(--bg);
-  padding: 3rem 2.8rem;
-  position: relative;
-  transition: background 0.3s;
-  overflow: hidden;
-}
-.edu-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 3px; height: 0;
-  background: var(--gold);
-  transition: height 0.5s;
-}
+.edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); border: 1px solid var(--border); margin-top: 3.5rem; }
+.edu-card { background: var(--bg); padding: 3rem 2.8rem; position: relative; transition: background 0.3s; overflow: hidden; }
+.edu-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--gold); transition: height 0.5s; }
 .edu-card:hover::before { height: 100%; }
 .edu-card:hover { background: rgba(201,168,76,0.04); }
-.edu-year {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.2rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
+.edu-year { font-family: 'Syne', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.6rem; }
 .edu-year::before { content: '●'; font-size: 0.4rem; }
-.edu-degree {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
-}
-.edu-school {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.05em;
-  margin-bottom: 1.5rem;
-}
-.edu-badge {
-  display: inline-block;
-  padding: 0.3rem 0.9rem;
-  background: var(--gold-dim);
-  border: 1px solid rgba(201,168,76,0.25);
-  font-family: 'Syne', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gold-light);
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.edu-highlights {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
-  font-size: 0.9rem;
-  color: rgba(240,237,232,0.55);
-  line-height: 1.7;
-}
+.edu-degree { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.5rem; }
+.edu-school { font-family: 'Syne', sans-serif; font-size: 0.82rem; font-weight: 500; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 1.5rem; }
+.edu-badge { display: inline-block; padding: 0.3rem 0.9rem; background: var(--gold-dim); border: 1px solid rgba(201,168,76,0.25); font-family: 'Syne', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-light); margin-right: 0.5rem; margin-bottom: 0.5rem; }
+.edu-highlights { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: rgba(240,237,232,0.55); line-height: 1.7; }
 
-/* ── EXPERIENCE ── */
-#experience {
-  padding: 8rem 5vw;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.exp-card {
-  margin-top: 3.5rem;
-  border: 1px solid var(--border);
-  padding: 3.5rem;
-  position: relative;
-  background: var(--card);
-  overflow: hidden;
-}
-.exp-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(201,168,76,0.03), transparent);
-  pointer-events: none;
-}
-.exp-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-  align-items: start;
-}
-.exp-role {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-.exp-company {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-top: 0.5rem;
-}
-.exp-location {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-top: 0.3rem;
-}
+/* EXPERIENCE */
+#experience { padding: 8rem 5vw; max-width: 1200px; margin: 0 auto; }
+.exp-card { margin-top: 3.5rem; border: 1px solid var(--border); padding: 3.5rem; position: relative; background: var(--card); overflow: hidden; }
+.exp-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(201,168,76,0.03), transparent); pointer-events: none; }
+.exp-header { display: grid; grid-template-columns: 1fr auto; gap: 2rem; margin-bottom: 2.5rem; align-items: start; }
+.exp-role { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 700; line-height: 1.2; }
+.exp-company { font-family: 'Syne', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-top: 0.5rem; }
+.exp-location { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: var(--muted); margin-top: 0.3rem; }
 .exp-tag-group { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
-.exp-tag {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.35rem 0.9rem;
-  border: 1px solid var(--border);
-  color: var(--muted);
-}
-.exp-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-.exp-section-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1rem;
-}
+.exp-tag { font-family: 'Syne', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.35rem 0.9rem; border: 1px solid var(--border); color: var(--muted); }
+.exp-body { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.exp-section-title { font-family: 'Syne', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
 .exp-list { list-style: none; }
-.exp-list li {
-  font-size: 0.95rem;
-  color: rgba(240,237,232,0.7);
-  padding: 0.5rem 0;
-  padding-left: 1.2rem;
-  position: relative;
-  line-height: 1.7;
-  border-bottom: 1px solid rgba(201,168,76,0.06);
-}
-.exp-list li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--gold);
-  font-size: 0.75rem;
-}
+.exp-list li { font-size: 0.95rem; color: rgba(240,237,232,0.7); padding: 0.5rem 0; padding-left: 1.2rem; position: relative; line-height: 1.7; border-bottom: 1px solid rgba(201,168,76,0.06); }
+.exp-list li::before { content: '→'; position: absolute; left: 0; color: var(--gold); font-size: 0.75rem; }
+.exp-recognition { margin-top: 2.5rem; padding: 1.5rem 2rem; border: 1px solid rgba(201,168,76,0.2); background: var(--gold-dim); display: flex; align-items: flex-start; gap: 1rem; }
+.exp-recognition i { color: var(--gold); font-size: 1.2rem; margin-top: 0.2rem; flex-shrink: 0; }
+.exp-recognition-text { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: rgba(240,237,232,0.85); line-height: 1.6; }
+.exp-recognition-text cite { display: block; font-family: 'Syne', sans-serif; font-size: 0.62rem; font-style: normal; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-top: 0.5rem; }
 
-/* ── SKILLS ── */
-#skills {
-  padding: 8rem 5vw;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
+/* SKILLS */
+#skills { padding: 8rem 5vw; background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .skills-inner { max-width: 1200px; margin: 0 auto; }
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  margin-top: 3.5rem;
-}
-.skills-group {
-  background: var(--bg);
-  padding: 2.8rem 2.5rem;
-}
-.skills-group-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
-.skills-group-sub {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.6rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.skills-group-sub::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; background: var(--border); border: 1px solid var(--border); margin-top: 3.5rem; }
+.skills-group { background: var(--bg); padding: 2.8rem 2.5rem; }
+.skills-group-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.4rem; }
+.skills-group-sub { font-family: 'Syne', sans-serif; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.8rem; display: flex; align-items: center; gap: 0.5rem; }
+.skills-group-sub::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 .pill-group { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.pill {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  padding: 0.45rem 1rem;
-  border: 1px solid rgba(201,168,76,0.2);
-  color: rgba(240,237,232,0.75);
-  background: rgba(201,168,76,0.04);
-  transition: border-color 0.3s, color 0.3s, background 0.3s;
-  cursor: default;
-}
-.pill:hover {
-  border-color: var(--gold);
-  color: var(--gold-light);
-  background: var(--gold-dim);
-}
+.pill { font-family: 'Syne', sans-serif; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.06em; padding: 0.45rem 1rem; border: 1px solid rgba(201,168,76,0.2); color: rgba(240,237,232,0.75); background: rgba(201,168,76,0.04); transition: border-color 0.3s, color 0.3s, background 0.3s; cursor: default; }
+.pill:hover { border-color: var(--gold); color: var(--gold-light); background: var(--gold-dim); }
 
-/* ── LEADERSHIP ── */
-#leadership {
-  padding: 8rem 5vw;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.timeline {
-  margin-top: 3.5rem;
-  position: relative;
-  padding-left: 3rem;
-}
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.8rem;
-  bottom: 0;
-  width: 1px;
-  background: linear-gradient(to bottom, var(--gold), transparent);
-}
-.timeline-item {
-  position: relative;
-  margin-bottom: 3.5rem;
-  padding-bottom: 3.5rem;
-  border-bottom: 1px solid var(--border);
-}
+/* LEADERSHIP */
+#leadership { padding: 8rem 5vw; max-width: 1200px; margin: 0 auto; }
+.timeline { margin-top: 3.5rem; position: relative; padding-left: 3rem; }
+.timeline::before { content: ''; position: absolute; left: 0; top: 0.8rem; bottom: 0; width: 1px; background: linear-gradient(to bottom, var(--gold), transparent); }
+.timeline-item { position: relative; margin-bottom: 3.5rem; padding-bottom: 3.5rem; border-bottom: 1px solid var(--border); }
 .timeline-item:last-child { border-bottom: none; margin-bottom: 0; }
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -3.35rem;
-  top: 0.55rem;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 2px solid var(--gold);
-  box-shadow: 0 0 12px rgba(201,168,76,0.4);
-}
-.timeline-year {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.7rem;
-}
-.timeline-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
-}
-.timeline-org {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.06em;
-  margin-bottom: 1.2rem;
-}
-.timeline-impact {
-  font-size: 0.95rem;
-  color: rgba(240,237,232,0.65);
-  line-height: 1.8;
-  max-width: 650px;
-}
-.timeline-award {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  padding: 0.4rem 1rem;
-  background: var(--gold-dim);
-  border: 1px solid rgba(201,168,76,0.25);
-  font-family: 'Syne', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gold-light);
-}
+.timeline-item::before { content: ''; position: absolute; left: -3.35rem; top: 0.55rem; width: 10px; height: 10px; border-radius: 50%; background: var(--bg); border: 2px solid var(--gold); box-shadow: 0 0 12px rgba(201,168,76,0.4); }
+.timeline-year { font-family: 'Syne', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.7rem; }
+.timeline-title { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.5rem; }
+.timeline-org { font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 500; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 1.2rem; }
+.timeline-impact { font-size: 0.95rem; color: rgba(240,237,232,0.65); line-height: 1.8; max-width: 650px; }
+.timeline-stats { display: flex; gap: 2rem; margin-top: 1.2rem; flex-wrap: wrap; }
+.timeline-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 700; color: var(--gold); line-height: 1; }
+.timeline-stat-label { font-family: 'Syne', sans-serif; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 0.2rem; }
+.timeline-award { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; margin-right: 0.5rem; padding: 0.4rem 1rem; background: var(--gold-dim); border: 1px solid rgba(201,168,76,0.25); font-family: 'Syne', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-light); }
 
-/* ── ACHIEVEMENTS ── */
-#achievements {
-  padding: 8rem 5vw;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
+/* ACHIEVEMENTS */
+#achievements { padding: 8rem 5vw; background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .ach-inner { max-width: 1200px; margin: 0 auto; }
-.ach-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  margin-top: 3.5rem;
-}
-.ach-card {
-  background: var(--bg);
-  padding: 2.5rem 2rem;
-  position: relative;
-  transition: background 0.3s;
-  overflow: hidden;
-}
+.ach-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--border); border: 1px solid var(--border); margin-top: 3.5rem; }
+.ach-card { background: var(--bg); padding: 2.5rem 2rem; position: relative; transition: background 0.3s; overflow: hidden; }
 .ach-card:hover { background: rgba(201,168,76,0.03); }
-.ach-icon {
-  font-size: 1.8rem;
-  color: var(--gold);
-  margin-bottom: 1.2rem;
-  display: block;
-}
-.ach-number {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1;
-  margin-bottom: 0.3rem;
-}
-.ach-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.8rem;
-}
-.ach-desc {
-  font-size: 0.87rem;
-  color: var(--muted);
-  line-height: 1.65;
-}
+.ach-icon { font-size: 1.8rem; color: var(--gold); margin-bottom: 1.2rem; display: block; }
+.ach-number { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 700; color: var(--white); line-height: 1; margin-bottom: 0.3rem; }
+.ach-title { font-family: 'Syne', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
+.ach-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
 
-/* ── CONTACT ── */
-#contact {
-  padding: 10rem 5vw;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-.contact-eyebrow {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.5rem;
-}
-.contact-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3rem, 7vw, 6rem);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
-}
+/* CONTACT */
+#contact { padding: 10rem 5vw; max-width: 1200px; margin: 0 auto; text-align: center; }
+.contact-eyebrow { font-family: 'Syne', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+.contact-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 7vw, 6rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
 .contact-title em { font-style: italic; color: var(--gold); }
-.contact-sub {
-  font-size: 1.05rem;
-  color: rgba(240,237,232,0.55);
-  max-width: 480px;
-  margin: 0 auto 3.5rem;
-  line-height: 1.8;
-}
-.contact-ctas {
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
-}
-.contact-divider {
-  width: 1px;
-  height: 4rem;
-  background: var(--border);
-  margin: 0 auto 3rem;
-}
-.social-row {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
-.social-link {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
+.contact-sub { font-size: 1.05rem; color: rgba(240,237,232,0.55); max-width: 480px; margin: 0 auto 3.5rem; line-height: 1.8; }
+.contact-ctas { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 4rem; }
+.contact-divider { width: 1px; height: 4rem; background: var(--border); margin: 0 auto 3rem; }
+.social-row { display: flex; gap: 2rem; justify-content: center; }
+.social-link { font-family: 'Syne', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.3s; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
 .social-link i { font-size: 1.2rem; }
 .social-link:hover { color: var(--gold); }
 
-/* ── FOOTER ── */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 2.5rem 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.footer-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--gold);
-}
-.footer-tagline {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.footer-copy {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
-  color: rgba(138,143,168,0.5);
-}
+/* FOOTER */
+footer { border-top: 1px solid var(--border); padding: 2.5rem 5vw; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer-name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--gold); }
+.footer-tagline { font-family: 'Syne', sans-serif; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
+.footer-copy { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: rgba(138,143,168,0.5); }
 
-/* ── ANIMATIONS ── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes scrollPulse {
-  0%, 100% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-  50% { opacity: 0.4; transform: scaleY(0.6); transform-origin: top; }
-}
-.reveal {
-  opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
+/* ANIMATIONS */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes scrollPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
 
-/* ── RESPONSIVE ── */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
@@ -930,6 +231,7 @@ footer {
   .exp-body { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .ach-grid { grid-template-columns: 1fr 1fr; }
+  .testimonials { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
   .hero-ctas { flex-direction: column; }
@@ -944,7 +246,6 @@ footer {
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo">F.</a>
   <ul class="nav-links">
@@ -960,7 +261,6 @@ footer {
   </button>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" class="mobile-link">About</a>
   <a href="#experience" class="mobile-link">Experience</a>
@@ -970,7 +270,6 @@ footer {
   <a href="#contact" class="mobile-link">Contact</a>
 </div>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -978,10 +277,10 @@ footer {
     <div class="hero-tag">DevOps · MBA · Athlete · Entrepreneur</div>
     <h1 class="hero-name">Far<em>han</em></h1>
     <p class="hero-headline">DevOps Engineer &nbsp;·&nbsp; MBA Marketing &nbsp;·&nbsp; Bridging Technology & Business<br/>Seeking Roles in Product Management, Business Development & Strategy</p>
-    <p class="hero-bio">I've led over a hundred community projects, completed marathons and triathlons, and built systems at one of the world's largest engineering companies. Now I'm moving where I've always belonged — at the intersection of technology and business strategy.</p>
+    <p class="hero-bio">I've led over a hundred community projects, managed a ₹10L budget as Rotaract President, and built systems at one of the world's largest engineering companies. Now I'm moving where I've always belonged — at the intersection of technology and business strategy.</p>
     <div class="hero-ctas">
       <a href="#experience" class="btn-primary">View My Work</a>
-      <a href="mailto:rtrfarhan3201@gmail.com" class="btn-outline">Let's Connect</a>
+      <a href="./Farhan%20Resume%20Updated%202026.pdf" download class="btn-outline"><i class="fas fa-download" style="margin-right:0.6rem"></i>Download Resume</a>
     </div>
   </div>
   <div class="hero-scroll-hint">
@@ -990,7 +289,6 @@ footer {
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="reveal">
     <div class="section-label">Who I Am</div>
@@ -999,51 +297,40 @@ footer {
   <div class="about-grid">
     <div class="about-left reveal reveal-delay-1">
       <div class="about-avatar">
-        <img
-          src="https://raw.githubusercontent.com/farhan2225/farhan2225.github.io/main/GRR%20-%20G3.jpg"
-          alt="Mohamed Farhan"
-          onerror="this.style.display='none'; this.parentElement.style.fontSize='7rem'; this.parentElement.style.fontFamily='Cormorant Garamond, serif'; this.parentElement.style.color='var(--gold)'; this.parentElement.insertAdjacentText('beforeend','F');"
-        />
+        <img src="./GRR - G3.jpg" alt="Mohamed Farhan" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"/>
+        <span class="avatar-fallback">F</span>
       </div>
       <div class="about-stats">
-        <div class="stat-item">
-          <span class="stat-num">60+</span>
-          <div class="stat-label">Races Completed</div>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">115+</span>
-          <div class="stat-label">Projects Led</div>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">8.72</span>
-          <div class="stat-label">B.Tech CGPA</div>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">25</span>
-          <div class="stat-label">Years Old</div>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">9.12</span>
-          <div class="stat-label">MBA - Marketing</div>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">3</span>
-          <div class="stat-label">Triathlons</div>
-        </div>
+        <div class="stat-item"><span class="stat-num">60+</span><div class="stat-label">Races Completed</div></div>
+        <div class="stat-item"><span class="stat-num">115+</span><div class="stat-label">Projects Led</div></div>
+        <div class="stat-item"><span class="stat-num">8.72</span><div class="stat-label">B.Tech CGPA</div></div>
+        <div class="stat-item"><span class="stat-num">₹10L</span><div class="stat-label">Budget Managed</div></div>
+        <div class="stat-item"><span class="stat-num">9.12</span><div class="stat-label">MBA CGPA</div></div>
+        <div class="stat-item"><span class="stat-num">60</span><div class="stat-label">Members Led</div></div>
       </div>
     </div>
     <div class="about-text reveal reveal-delay-2">
       <p>I started as a software engineer, got hired by Bosch, and quickly realized the problems that fascinated me most weren't infrastructure problems — they were business problems. What should we build? For whom? Why does this exist? That's the territory I want to own.</p>
       <p>While working full-time in DevOps, I went back to school for an MBA in Marketing at Manipal Academy of Higher Education. Not because I needed a credential — but because I needed a vocabulary for the ideas I'd been wrestling with for years. Strategy. Consumer behavior. Product thinking. Financial discipline. It clicked everything into place.</p>
-      <p>Outside the office, I run things. Literally and figuratively. I've completed races and triathlons, served as President of my Rotaract club — where I executed 115+ community projects in a single year — and help run the family's hospitality business in Coimbatore. The common thread: I show up, I lead, and I finish what I start.</p>
+      <p>Outside the office, I run things. Literally and figuratively. I've completed races and triathlons, served as President of my Rotaract club — leading 60 members, managing a ₹10L budget, executing 115+ projects in a single year — and help run the family's hospitality business in Coimbatore. The common thread: I show up, I lead, and I finish what I start.</p>
       <div class="about-quote">
-        <p>"I'm not transitioning away from tech — I'm adding the other half of the equation."</p>
+        <p>"Fuelled to fascinate."</p>
+        <cite>— Club Presidency Motto · Rotaract Club of Coimbatore CACIL, 2022–23</cite>
       </div>
+    </div>
+  </div>
+  <div class="testimonials reveal">
+    <div class="testimonial-card">
+      <div class="testimonial-text">"Humble, hungry and smart."</div>
+      <div class="testimonial-author">Tribe Lead · Bosch Global Software Technologies</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-text">"Recognized for outstanding coordination and organizing skills — the kind of person who makes things happen and makes it look seamless."</div>
+      <div class="testimonial-author">Champ-Skill Recognition · Bosch BGSW PA-TO Townhall</div>
     </div>
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
   <div class="edu-inner">
     <div class="reveal">
@@ -1054,33 +341,21 @@ footer {
       <div class="edu-card">
         <div class="edu-year">2019 – 2023</div>
         <div class="edu-degree">B.Tech in Information Technology</div>
-        <div class="edu-school">Coimbatore Institute of Technology</div>
-        <div>
-          <span class="edu-badge">First Class with Distinction</span>
-          <span class="edu-badge">CGPA 8.72</span>
-        </div>
-        <div class="edu-highlights">
-          Systems design, programming fundamentals, and IT infrastructure — the technical bedrock that makes me dangerous in any product or strategy conversation.
-        </div>
+        <div class="edu-school">Coimbatore Institute of Technology · Anna University</div>
+        <div><span class="edu-badge">First Class with Distinction</span><span class="edu-badge">CGPA 8.72</span></div>
+        <div class="edu-highlights">Systems design, programming fundamentals, and IT infrastructure — the technical bedrock that makes me credible in any product or strategy conversation. Published research on AI-powered assistive technology during this period.</div>
       </div>
       <div class="edu-card">
         <div class="edu-year">2024 – 2026</div>
         <div class="edu-degree">MBA in Marketing</div>
         <div class="edu-school">Manipal Academy of Higher Education</div>
-        <div>
-          <span class="edu-badge">UGC-DEB Accredited</span>
-          <span class="edu-badge">NAAC A+</span>
-          <span class="edu-badge">9.12 CGPA</span>
-        </div>
-        <div class="edu-highlights">
-          Digital Marketing · Services Marketing & CRM · Consumer Behavior · Strategic Management · Financial Management · Business Leadership · Legal Aspects of Business · Research Methodology · IT for Business
-        </div>
+        <div><span class="edu-badge">UGC-DEB Accredited</span><span class="edu-badge">NAAC A+</span><span class="edu-badge">CGPA 9.12</span></div>
+        <div class="edu-highlights">Digital Marketing · Services Marketing & CRM · Consumer Behavior · Strategic Management · Financial Management · Business Leadership · Legal Aspects of Business · Research Methodology · IT for Business · Management Accounting</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="reveal">
     <div class="section-label">Professional Experience</div>
@@ -1103,28 +378,34 @@ footer {
       <div>
         <div class="exp-section-title">What I Do</div>
         <ul class="exp-list">
-          <li>Work within Bosch — one of the world's largest engineering and technology companies — across IT infrastructure and software delivery pipelines</li>
-          <li>Drive cross-functional collaboration between technical and business teams, learning the language of both</li>
-          <li>Apply systems thinking to complex operational challenges — identifying root causes, not just symptoms</li>
-          <li>Build and maintain CI/CD pipelines, infrastructure tooling, and deployment automation</li>
-          <li>Develop deep intuition for how software products are built, shipped, and maintained at scale</li>
+          <li>Build and maintain CI/CD pipelines and deployment automation within one of the world's largest engineering organizations</li>
+          <li>Develop and expand ServiceNow incident management dashboards for BDC and SDE teams — translating operational data into leadership visibility</li>
+          <li>Support GenAI team demos through deployment infrastructure, bridging the gap between research and production</li>
+          <li>Drive cross-functional collaboration between technical and business teams, fluent in the language of both</li>
+          <li>Manage CSR communications for BGSW, combining technical work with stakeholder-facing content</li>
         </ul>
       </div>
       <div>
         <div class="exp-section-title">What I'm Building Toward</div>
         <ul class="exp-list">
           <li>Translating technical depth into product decisions — understanding what's feasible before it becomes a requirement</li>
-          <li>Using my DevOps experience as a lens for identifying operational bottlenecks in business processes</li>
-          <li>Bridging engineering and business development — the conversations where deals are won or lost often hinge on technical credibility</li>
-          <li>Positioning for roles in Product Management, Business Development, and Strategy — where systems thinking and people skills converge</li>
-          <li>Building the business acumen (via MBA) to match the technical foundation I already have</li>
+          <li>Using DevOps experience as a lens for identifying operational bottlenecks in business processes</li>
+          <li>Bridging engineering and business development — deals are often won or lost on technical credibility</li>
+          <li>Positioning for Product Management, Business Development, and Strategy roles — where systems thinking and people skills converge</li>
+          <li>Matching technical foundation with business acumen through an MBA in Marketing</li>
         </ul>
+      </div>
+    </div>
+    <div class="exp-recognition">
+      <i class="fas fa-quote-left"></i>
+      <div class="exp-recognition-text">
+        "Humble, hungry and smart."
+        <cite>— Tribe Lead, Bosch BGSW · Champ-Skill Recognition, PA-TO Townhall</cite>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="skills-inner">
     <div class="reveal">
@@ -1136,49 +417,27 @@ footer {
         <div class="skills-group-title">Technical</div>
         <div class="skills-group-sub">Engineering Layer</div>
         <div class="pill-group">
-          <span class="pill">DevOps</span>
-          <span class="pill">CI/CD Pipelines</span>
-          <span class="pill">IT Infrastructure</span>
-          <span class="pill">System Design</span>
-          <span class="pill">Automation</span>
-          <span class="pill">Digital Tools</span>
-          <span class="pill">Data Analysis</span>
-          <span class="pill">Software Delivery</span>
+          <span class="pill">DevOps</span><span class="pill">CI/CD Pipelines</span><span class="pill">IT Infrastructure</span><span class="pill">System Design</span><span class="pill">Automation</span><span class="pill">ServiceNow</span><span class="pill">Linux/Unix</span><span class="pill">Software Delivery</span>
         </div>
       </div>
       <div class="skills-group">
         <div class="skills-group-title">Business</div>
         <div class="skills-group-sub">Strategy Layer</div>
         <div class="pill-group">
-          <span class="pill">Marketing Strategy</span>
-          <span class="pill">Business Development</span>
-          <span class="pill">Product Thinking</span>
-          <span class="pill">Consumer Behavior</span>
-          <span class="pill">CRM</span>
-          <span class="pill">Financial Analysis</span>
-          <span class="pill">Market Research</span>
-          <span class="pill">Digital Marketing</span>
-          <span class="pill">Strategic Planning</span>
+          <span class="pill">Marketing Strategy</span><span class="pill">Business Development</span><span class="pill">Product Thinking</span><span class="pill">Consumer Behavior</span><span class="pill">CRM</span><span class="pill">Financial Analysis</span><span class="pill">Market Research</span><span class="pill">Digital Marketing</span><span class="pill">Strategic Planning</span>
         </div>
       </div>
       <div class="skills-group">
         <div class="skills-group-title">Human</div>
         <div class="skills-group-sub">Leadership Layer</div>
         <div class="pill-group">
-          <span class="pill">Public Speaking</span>
-          <span class="pill">Leadership</span>
-          <span class="pill">Community Building</span>
-          <span class="pill">Event Management</span>
-          <span class="pill">Networking</span>
-          <span class="pill">Negotiation</span>
-          <span class="pill">Team Management</span>
+          <span class="pill">Public Speaking</span><span class="pill">Leadership</span><span class="pill">Community Building</span><span class="pill">Event Management</span><span class="pill">Networking</span><span class="pill">Negotiation</span><span class="pill">Team Management</span><span class="pill">Budget Management</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LEADERSHIP -->
 <section id="leadership">
   <div class="reveal">
     <div class="section-label">Leadership History</div>
@@ -1189,25 +448,41 @@ footer {
       <div class="timeline-year">Ongoing</div>
       <div class="timeline-title">District Chair — District Events</div>
       <div class="timeline-org">RI District 3206 · Rotary International</div>
-      <div class="timeline-impact">Chair for organizing large-scale Rotaract district events, responsible for logistics, communications, and on-ground execution. Built the muscle for high-stakes coordination under pressure.</div>
+      <div class="timeline-impact">Chair for organizing large-scale Rotaract district events — responsible for logistics, communications, and on-ground execution across multiple clubs. The muscle for high-stakes coordination built here translates directly into enterprise project management.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2024 – 2025</div>
       <div class="timeline-title">Group Rotaract Representative</div>
       <div class="timeline-org">RI District 3206 · Rotary International</div>
-      <div class="timeline-impact">Represented and coordinated multiple Rotaract clubs across the district. Managed district-level events, communications, and club branding — operating as the connective tissue between individual clubs and district leadership. This is what stakeholder management at scale looks like before anyone calls it that.</div>
+      <div class="timeline-impact">Represented and coordinated multiple Rotaract clubs across the district. Managed district-level events, communications, and club branding — the connective tissue between individual clubs and district leadership. This is what stakeholder management at scale looks like before anyone calls it that.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2022 – 2023</div>
       <div class="timeline-title">Club President</div>
       <div class="timeline-org">Rotaract Club of Coimbatore CACIL</div>
-      <div class="timeline-impact">Led the club through its most productive year on record — 115+ community projects across service, professional development, and international verticals. Built and managed a cross-functional team from the ground up. Not everyone who holds this title earns recognition for it. I did.</div>
-      <div class="timeline-award"><i class="fas fa-award"></i> Best President Award</div>
+      <div class="timeline-impact">Led the club through its most productive year on record. Built and managed a cross-functional team from scratch across service, professional development, and international verticals. The motto I ran with: <em>Fuelled to Fascinate.</em></div>
+      <div class="timeline-stats">
+        <div class="timeline-stat">
+          <div class="timeline-stat-num">115+</div>
+          <div class="timeline-stat-label">Events Organized</div>
+        </div>
+        <div class="timeline-stat">
+          <div class="timeline-stat-num">60</div>
+          <div class="timeline-stat-label">Members Led</div>
+        </div>
+        <div class="timeline-stat">
+          <div class="timeline-stat-num">₹10L</div>
+          <div class="timeline-stat-label">Budget Managed</div>
+        </div>
+      </div>
+      <div style="margin-top:1rem">
+        <span class="timeline-award"><i class="fas fa-award"></i> Best President Award</span>
+        <span class="timeline-award"><i class="fas fa-star"></i> Outstanding Community-Based Club</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
 <section id="achievements">
   <div class="ach-inner">
     <div class="reveal">
@@ -1219,55 +494,54 @@ footer {
         <i class="fas fa-person-running ach-icon"></i>
         <div class="ach-number">60+</div>
         <div class="ach-title">Races Completed</div>
-        <div class="ach-desc">Road races, marathons, triathlons. A discipline built over years — every finish line proves I don't quit when things get hard.</div>
+        <div class="ach-desc">Road races, marathons, triathlons. A discipline built over years. Every finish line is proof I don't quit when things get hard.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-users ach-icon"></i>
         <div class="ach-number">115+</div>
         <div class="ach-title">Projects Executed</div>
-        <div class="ach-desc">In a single year as Club President. Community projects across service, development, and international verticals.</div>
+        <div class="ach-desc">In a single year as Club President, leading 60 members across a ₹10L budget. Community projects at real scale.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-hotel ach-icon"></i>
         <div class="ach-number">★★★</div>
         <div class="ach-title">Hospitality Business</div>
-        <div class="ach-desc">Hotel Chanma International, Coimbatore. Rooftop pool, Ganis Gym & CrossFit. Family business I actively help operate and market.</div>
+        <div class="ach-desc">Hotel Chanma International — rooftop pool, swimming coaching, Ganis Gym & CrossFit. Family business I actively help run and market.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-trophy ach-icon"></i>
         <div class="ach-number">Best</div>
         <div class="ach-title">President Award</div>
-        <div class="ach-desc">Recognized for the most impactful club presidency in the district. Earned, not inherited.</div>
+        <div class="ach-desc">Recognized for the most impactful club presidency in the district. Earned through 115+ events and a year that redefined what the club could be.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-star ach-icon"></i>
         <div class="ach-number">DRR</div>
         <div class="ach-title">Special Recognition 2021 & 2023</div>
-        <div class="ach-desc">Recognized by the District Rotaract Representative for outstanding contribution across two cycles.</div>
+        <div class="ach-desc">Recognized by the District Rotaract Representative for outstanding contribution across two separate cycles.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-medal ach-icon"></i>
         <div class="ach-number">1st</div>
         <div class="ach-title">Outstanding Community-Based Club</div>
-        <div class="ach-desc">District recognition for the most impactful community projects delivered by a club that year.</div>
+        <div class="ach-desc">District-level recognition for the most impactful community projects delivered that year under my presidency.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-file-alt ach-icon"></i>
         <div class="ach-number">Published</div>
         <div class="ach-title">Smart Cane for Visually Impaired</div>
-        <div class="ach-desc">Research paper on an AI-powered assistive device for the visually impaired — applying tech to real human problems.</div>
+        <div class="ach-desc">Research paper on an AI-powered assistive device — applying technology to solve real human problems before it was a buzzword.</div>
       </div>
       <div class="ach-card">
         <i class="fas fa-award ach-icon"></i>
         <div class="ach-number">Champ</div>
         <div class="ach-title">Bosch Champ-Skill Recognition</div>
-        <div class="ach-desc">Recognized at Bosch BGSW for coordination and organizing skills during the PA-TO Townhall. Technical companies notice people skills too.</div>
+        <div class="ach-desc">Recognized at Bosch BGSW for coordination and organizing excellence during the PA-TO Townhall. Technical companies notice people skills too.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="contact-eyebrow reveal">Open to opportunities</div>
   <h2 class="contact-title reveal">Let's build<br/><em>something.</em></h2>
@@ -1275,22 +549,16 @@ footer {
   <div class="contact-ctas reveal">
     <a href="mailto:rtrfarhan3201@gmail.com" class="btn-primary"><i class="fas fa-envelope" style="margin-right:0.6rem"></i>Send an Email</a>
     <a href="https://www.linkedin.com/in/mohamed-farhan-982351224/" target="_blank" class="btn-outline"><i class="fab fa-linkedin" style="margin-right:0.6rem"></i>LinkedIn</a>
+    <a href="./Farhan%20Resume%20Updated%202026.pdf" download class="btn-outline"><i class="fas fa-download" style="margin-right:0.6rem"></i>Resume</a>
   </div>
   <div class="contact-divider reveal"></div>
   <div class="social-row reveal">
-    <a href="https://www.linkedin.com/in/mohamed-farhan-982351224/" target="_blank" class="social-link">
-      <i class="fab fa-linkedin"></i>LinkedIn
-    </a>
-    <a href="mailto:rtrfarhan3201@gmail.com" class="social-link">
-      <i class="fas fa-envelope"></i>Email
-    </a>
-    <a href="https://github.com/farhan2225" target="_blank" class="social-link">
-      <i class="fab fa-github"></i>GitHub
-    </a>
+    <a href="https://www.linkedin.com/in/mohamed-farhan-982351224/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="mailto:rtrfarhan3201@gmail.com" class="social-link"><i class="fas fa-envelope"></i>Email</a>
+    <a href="https://github.com/farhan2225" target="_blank" class="social-link"><i class="fab fa-github"></i>GitHub</a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div>
     <div class="footer-name">Mohamed Farhan</div>
@@ -1300,13 +568,8 @@ footer {
 </footer>
 
 <script>
-// NAV SCROLL
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
-});
-
-// HAMBURGER
+window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 hamburger.addEventListener('click', () => {
@@ -1321,19 +584,11 @@ document.querySelectorAll('.mobile-link').forEach(link => {
     document.body.style.overflow = '';
   });
 });
-
-// SCROLL REVEAL
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
+  entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 revealEls.forEach(el => observer.observe(el));
 </script>
-
 </body>
 </html>
