@@ -151,6 +151,9 @@ nav.scrolled { background: rgba(8,11,18,0.85); backdrop-filter: blur(18px); bord
 .testimonial-card { background: var(--bg2); padding: 2.2rem 2rem; }
 .testimonial-text { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: rgba(240,237,232,0.85); line-height: 1.7; margin-bottom: 1rem; }
 .testimonial-author { font-family: 'Syne', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+/* If there's an odd number of testimonial cards, the last one would leave
+   an empty cell next to it — this makes it stretch across both columns instead */
+.testimonial-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
 /* ============================================================
    EDUCATION — two side-by-side cards (B.Tech + MBA). Each card
@@ -272,7 +275,7 @@ nav.scrolled { background: rgba(8,11,18,0.85); backdrop-filter: blur(18px); bord
    about the car at the bottom.
    ============================================================ */
 #vitality { padding: 8rem 5vw; max-width: 1200px; margin: 0 auto; }
-.vitality-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--border); border: 1px solid var(--border); margin-top: 3.5rem; }
+.vitality-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); border: 1px solid var(--border); margin-top: 3.5rem; }
 .vitality-card { background: var(--bg2); padding: 2.3rem 1.8rem; text-align: center; transition: background 0.3s; }
 .vitality-card:hover { background: rgba(201,168,76,0.04); }
 .vitality-icon { font-size: 1.6rem; color: var(--gold); margin-bottom: 1rem; display: block; }
@@ -360,7 +363,7 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 5vw; display: flex
   .practicum-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
-  .vitality-grid { grid-template-columns: 1fr 1fr; }
+  .vitality-grid { grid-template-columns: 1fr 1fr; } /* 6 items ÷ 2 cols = exactly 3 rows, no empty cells */
   .ach-grid { grid-template-columns: 1fr 1fr; }
   .testimonials { grid-template-columns: 1fr; }
 }
